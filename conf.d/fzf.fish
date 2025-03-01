@@ -8,12 +8,12 @@ function _fzf-fish-key-bindings --on-variable fish_key_bindings
         set modes insert default
     end
 
-    bind --mode $modes[1] \cx\ck _fzf-kill
-    bind --mode $modes[1] \cg\cb _fzf-git-branches
-    bind --mode $modes[1] \cg\cl _fzf-git-hashes
-    bind --mode $modes[1] \cg\ct _fzf-git-tags
-    bind --mode $modes[1] \cj\cl _fzf-jj-revs
-    bind --mode $modes[1] \ex _fzf-backward-cd
+    bind --mode $modes[1] ctrl-x,ctrl-k _fzf-kill
+    bind --mode $modes[1] ctrl-g,ctrl-b _fzf-git-branches
+    bind --mode $modes[1] ctrl-g,ctrl-l _fzf-git-hashes
+    bind --mode $modes[1] ctrl-g,ctrl-t _fzf-git-tags
+    bind --mode $modes[1] ctrl-j,ctrl-l _fzf-jj-revs
+    bind --mode $modes[1] alt-x _fzf-backward-cd
 end
 
 _fzf-fish-key-bindings
